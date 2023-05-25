@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;StGradeEx.java&apos; to &apos;PHP Travels/src/phpTravels&apos;&#x0D;&#x0A;- Original project: &apos;LiveTech&apos;&#x0D;&#x0A;- Destination element: &apos;PHP Travels/src/phpTravels&apos;&#x0D;&#x0A;- Original element: &apos;trainingSelenium.StGradeEx.java&apos;" description="Copy compilation unit" destination="=PHP Travels/src&lt;phpTravels" element1="/src&lt;trainingSelenium{StGradeEx.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1581679448888" units="1" version="1.0"/>
+</session>

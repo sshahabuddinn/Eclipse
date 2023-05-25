@@ -1,0 +1,31 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class QAAcacademyDemo {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/"); 
+		driver.manage().window().maximize();
+		
+		WebElement msg= driver.findElement(By.id("checkBoxOption2"));
+		
+			System.out.println(msg.getText());
+		
+	/*	Select drp=new Select(driver.findElement(By.id("dropdown"))); 
+		
+			msg.findElement(By.id("checkBoxOption2")).getText();
+				
+		   if(msg.isSelected())
+		{
+			System.out.println("drp.selectByIndex(1)");
+		} */
+		
+	}
+
+}

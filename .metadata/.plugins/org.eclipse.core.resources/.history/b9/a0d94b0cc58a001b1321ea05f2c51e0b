@@ -1,0 +1,10 @@
+package automationscripts;
+
+public class Fortinet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

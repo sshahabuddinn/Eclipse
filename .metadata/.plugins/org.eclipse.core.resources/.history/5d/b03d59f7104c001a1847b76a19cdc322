@@ -1,0 +1,31 @@
+package trainingSelenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class IDLocator {
+	
+	public static void main(String[] args) {
+
+			
+		// To initialize the browser
+		
+		System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			
+			driver.get("https://google.com");
+			driver.manage().window().maximize();
+			
+		// To login into the application
+			
+			driver.findElement(By.id("username")).sendKeys("admin");
+			
+			
+			
+			
+			
+
+	}
+	
+}

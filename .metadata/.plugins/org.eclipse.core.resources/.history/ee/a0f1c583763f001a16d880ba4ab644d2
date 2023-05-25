@@ -1,0 +1,40 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Protractor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ehtesham\\Downloads\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
+		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		
+		driver.findElement(By.xpath("//input[contains(@name,'nam')]")).sendKeys("hello");
+		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("goodbye");
+		
+	
+		
+		
+	
+					
+		
+		
+		
+		
+		
+		
+		
+		/* CSS path & CSS regular expression
+		driver.findElement(By.cssSelector("a[title='Sign in']")).click();   // To click on Go with link on login page
+		driver.findElement(By.cssSelector("input#password")).sendKeys("goodbye"); // Using CSS regular expression   */
+		
+		
+		
+	}
+
+}

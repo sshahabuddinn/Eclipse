@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <test name="Personal Loan(failed)">
+    <classes>
+      <class name="test.Day4">
+        <methods>
+          <include name="WebloginHomeloan"/>
+        </methods>
+      </class> <!-- test.Day4 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->

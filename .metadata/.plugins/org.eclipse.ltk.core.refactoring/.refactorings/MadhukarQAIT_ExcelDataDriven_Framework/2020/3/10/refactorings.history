@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;mercuryExcelDataDriven.Login_MercuryTours_ExcelDataDriven&apos; to &apos;XLUtils&apos;&#x0D;&#x0A;- Original project: &apos;MadhukarQAIT_ExcelDataDriven_Framework&apos;&#x0D;&#x0A;- Original element: &apos;mercuryExcelDataDriven.Login_MercuryTours_ExcelDataDriven&apos;&#x0D;&#x0A;- Renamed element: &apos;mercuryExcelDataDriven.XLUtils&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Login_MercuryTours_ExcelDataDriven&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;mercuryExcelDataDriven{Login_MercuryTours_ExcelDataDriven.java[Login_MercuryTours_ExcelDataDriven" matchStrategy="1" name="XLUtils" qualified="false" references="true" similarDeclarations="false" stamp="1583249707021" textual="false" version="1.0"/>
+</session>

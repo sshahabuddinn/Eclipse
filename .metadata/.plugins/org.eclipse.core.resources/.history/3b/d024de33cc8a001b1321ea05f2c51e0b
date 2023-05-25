@@ -1,0 +1,37 @@
+package automationscripts;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class Fortinet {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.gecko.driver", ".\\Drivers\\geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://s3.amazonaws.com/istreet-assets/bHFRMn4JHQnwP7QcqCer7w/fortinet-qa-testsite.html");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		String pgTitle=driver.getTitle();
+		if(pgTitle.contains("Task List")) {
+			System.out.println("Task List title is present");
+		}
+		else {
+			System.out.println("Task List title is not present");
+		}
+		
+		WebElement sd = driver.findElement(By.xpath("//label[text()='Task Name']"));
+		sd.sendKeys("Admin Module");
+		System.out.println("Task Name is present");
+
+
+	}
+
+}

@@ -1,0 +1,42 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UpdatedDropdown {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver83.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
+       driver.get("https://www.spicejet.com/");
+       driver.findElement(By.id("divpaxinfo")).click();
+       Thread.sleep(2000L);
+       
+       /* 
+        * while(true)
+        * {
+        * 
+        * }        */
+       
+      /* int i=1;
+       while (i<5)
+       {   
+    	driver.findElement(By.id("ctl00_mainContent_ddl_Adult")).click();
+       i++;
+       } */
+       
+       for(int i=1;i<5;i++)
+       {
+    	   driver.findElement(By.id("ctl00_mainContent_ddl_Adult")).click();
+       }
+       
+       
+       }
+	
+	
+	}
+
+

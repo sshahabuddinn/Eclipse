@@ -1,0 +1,32 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class testcase2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// webdriver.chrome.driver ; webdriver.gecko.driver ; webdriver.ie.driver ; "C:\\dir\\chromedriver.exe"
+		// selenium code
+		
+		// Create Driver object for Chrome Browser
+		
+		// We will strictly implement methods of webdriver
+		
+		/* Class name = ChromeDriver,
+		 * 
+		 *  X driver =new X(); Syntax for java to create object for the method where x is the object */
+		// invoke .exe file first
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ehtesham\\Downloads\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		Select s=new Select(driver.findElement(By.id("dropdown-class-example")));
+		//s.selectByValue("1");
+		s.selectByIndex(2);
+		s.selectByVisibleText("Option3");
+
+	}
+
+}
